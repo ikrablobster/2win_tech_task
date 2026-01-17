@@ -285,9 +285,9 @@
       if (k > 0 && R > 0) {
         html += `
       <div>        
-        <h3>Шаг 1. 29 (136) * ${k}</h3>
+        <p>Шаг 1. 29 (136) * ${k}</p>
         <p>
-          29 × ${k} = <b>${29 * k}</b><br>
+          29 × ${k} = ${29 * k}<br>
           Остаток: <strong>${R}</strong>
         </p>
       </div>
@@ -296,7 +296,7 @@
 
       html += `
     <div>
-      <h3>Шаг 2. Разбиение остатка ${amountForSplit}</h3>
+      <p>Шаг 2. Разбиение остатка <b>${amountForSplit}</b></p>
   `;
 
       finalCombos.forEach((combo, index) => {
